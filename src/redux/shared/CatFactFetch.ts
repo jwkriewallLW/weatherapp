@@ -17,10 +17,8 @@ if (!API_BASE_URL) {
   throw new Error("Missing baseApiURL in authConfig");
 }
 
-async function apiFetch(method: string, apiURL: string = "", data?: any, ) {
-  const baseUrl = API_BASE_URL?.endsWith("/")
-    ? API_BASE_URL
-    : `${API_BASE_URL}/`;
+async function apiFetch(method: string, apiURL: string = "", data?: any ) {
+  const baseUrl = API_BASE_URL?.endsWith("/") ? API_BASE_URL : `${API_BASE_URL}/`;
   apiURL = `${baseUrl}${apiURL}`;
 
   // const headers = {
@@ -37,7 +35,7 @@ async function apiFetch(method: string, apiURL: string = "", data?: any, ) {
           method: method,
           // headers: headers,
         })
-        .then((response) => {
+        .then((response: any) => {
           if (response.status === OK) {
             return response.data;
           } else if (response.status === NO_CONTENT) {
