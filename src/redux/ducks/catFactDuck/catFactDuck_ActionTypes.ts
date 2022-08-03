@@ -1,0 +1,8 @@
+export const actionTypes : Record<string, string> = Object.freeze({
+    CATFACT_REQUESTED: "CATFACT_REQUESTED",
+    CATFACT_FAILED_LOADING: "CATFACT_FAILED_LOADING",
+    CATFACT_SUCCESS: "CATFACT_SUCCESS",
+    CATFACT_NOT_FOUND: "CATFACT_NOT_FOUND",
+  });
+  
+  
