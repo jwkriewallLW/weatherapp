@@ -1,0 +1,8 @@
+export const actionTypes : Record<string, string> = Object.freeze({
+    WEATHER_REQUESTED: "WEATHER_REQUESTED",
+    WEATHER_FAILED_LOADING: "WEATHER_FAILED_LOADING",
+    WEATHER_SUCCESS: "WEATHER_SUCCESS",
+    WEATHER_NOT_FOUND: "WEATHER_NOT_FOUND",
+  });
+  
+  
